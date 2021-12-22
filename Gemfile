@@ -11,7 +11,7 @@ gem "jekyll", "~> 4.2.1"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "jekyll-theme-platoniq-journal", path: "../jekyll-theme-platoniq-journal"
 
-gem "jekyll-theme-platoniq-journal", git: "git@github.com:Platoniq/jekyll-theme-platoniq-journal.git", branch: "feat/theme_blueprint"
+gem "jekyll-theme-platoniq-journal", git: "https://github.com/Platoniq/jekyll-theme-platoniq-journal.git", branch: "feat/theme_blueprint"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins

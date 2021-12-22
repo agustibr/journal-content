@@ -1,9 +1,9 @@
 GIT
-  remote: git@github.com:Platoniq/jekyll-theme-platoniq-journal.git
-  revision: 6e0837b28f719621a7cd124d95eafd140323a1db
+  remote: https://github.com/Platoniq/jekyll-theme-platoniq-journal.git
+  revision: 521ec976dacc783a7756c87854cc4467b7e5713e
   branch: feat/theme_blueprint
   specs:
-    jekyll-theme-platoniq-journal (0.0.1)
+    jekyll-theme-platoniq-journal (0.0.2)
       jekyll (~> 4.2)
 
 GEM
