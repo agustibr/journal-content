@@ -1,7 +1,10 @@
 ---
 article-order: 1
+article-id: first-dive
 title: ¿La brecha de participación digital tiene género?
 author: jill
+related_article_ids:
+  - dd-example
 ---
 
 ## Hipótesis

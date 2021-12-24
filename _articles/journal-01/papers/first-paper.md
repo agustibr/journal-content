@@ -1,4 +1,5 @@
 ---
+article-id: first-paper
 article-order: 3
 title: A Paper
 ---
