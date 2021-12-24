@@ -10,9 +10,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 theme: jekyll-theme-platoniq-journal
 destination: ./build
-# plugins:
-#  - jekyll-feed
-
 permalinks: pretty
 
 collections:
@@ -25,8 +22,6 @@ collections:
     output: true
     permalink: :path
 
-
-permalinks: pretty
 
 defaults:
   - scope:
@@ -50,10 +45,10 @@ defaults:
       layout: "article"
       author: "anon"
   - scope:
-      path: "_articles/*/case-studies"
+      path: "_articles/*/blue-prints"
       type: articles
     values:
-      category: "case-studies"
+      category: "blue-prints"
   - scope:
       path: "_articles/*/deep-dives"
       type: articles
@@ -80,3 +75,9 @@ defaults:
       type: articles
     values:
       journal-num: 2
+  - scope:
+      path: "media"
+    values:
+      media: true
+
+exclude: [Gemfile, Gemfile.lock, README.md, LICENSE.txt, .editorconfig]
