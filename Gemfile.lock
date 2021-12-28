@@ -1,9 +1,19 @@
 GIT
-  remote: https://github.com/Platoniq/jekyll-theme-platoniq-journal.git
-  revision: 4d69113aed7cb2eebc67fa0a92a81bc6f960d210
+  remote: https://github.com/Platoniq/jekyll-plugin-platoniq-journal.git
+  revision: 810c7dd35955791615aebcb2db623ec279c12eed
   specs:
-    jekyll-theme-platoniq-journal (0.0.4)
+    jekyll-plugin-platoniq-journal (0.0.1)
       jekyll (~> 4.2)
+      kramdown (~> 2.3)
+
+GIT
+  remote: https://github.com/Platoniq/jekyll-theme-platoniq-journal.git
+  revision: 413667d23ae2d2224317096246ba3a7fcf056a2a
+  specs:
+    jekyll-theme-platoniq-journal (0.0.5)
+      jekyll (~> 4.2)
+      jekyll-plugin-platoniq-journal (~> 0.0.1)
+      jekyll-seo-tag (~> 2.6)
 
 GEM
   remote: https://rubygems.org/
@@ -36,6 +46,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.1.0)
@@ -44,6 +56,8 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -74,9 +88,12 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2.1)
+  jekyll-archives
   jekyll-feed (~> 0.12)
+  jekyll-plugin-platoniq-journal!
   jekyll-seo-tag
   jekyll-theme-platoniq-journal!
+  jekyll-youtube
   webrick
 
 BUNDLED WITH

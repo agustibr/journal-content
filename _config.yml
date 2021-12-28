@@ -9,19 +9,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: jekyll-theme-platoniq-journal
+timezone: ES
 destination: ./build
-permalinks: pretty
+permalink: /:categories/:title/
 
 collections:
-  articles:
-    output: true
-    permalink: :categories/:title
   authors:
     output: true
   journals:
     output: true
     permalink: :path
 
+jekyll-archives:
+  enabled:
+    - categories
+  layout: "archive/category"
+  permalinks:
+    category: "/category/:name/"
 
 defaults:
   - scope:
@@ -39,42 +43,44 @@ defaults:
     values:
       layout: "author"
   - scope:
-      path: "_articles"
-      type: articles
+      type: posts
     values:
       layout: "article"
       author: "anon"
+
   - scope:
-      path: "_articles/*/blue-prints"
-      type: articles
+      path: "_posts/*/blue-prints"
+      type: posts
     values:
-      category: "blue-prints"
+      categories: "blue-prints"
   - scope:
-      path: "_articles/*/deep-dives"
-      type: articles
+      path: "_posts/*/deep-dives"
+      type: posts
     values:
       layout: "articles/deep_dive"
-      category: "deep-dives"
+      categories: "deep-dives"
   - scope:
-      path: "_articles/*/interviews"
-      type: articles
+      path: "_posts/*/interviews"
+      type: posts
     values:
-      category: "interviews"
+      categories: "interviews"
   - scope:
-      path: "_articles/*/papers"
-      type: articles
+      path: "_posts/*/papers"
+      type: posts
     values:
-      category: "papers"
+      categories: "papers"
   - scope:
-      path: "_articles/journal-01/*"
-      type: articles
+      path: "_posts/journal-01/*"
+      type: posts
     values:
       journal-num: 1
+      tags: "journal_one"
   - scope:
-      path: "_articles/journal-02/*"
-      type: articles
+      path: "_posts/journal-02/*"
+      type: posts
     values:
       journal-num: 2
+      tags: "journal_one"
   - scope:
       path: "media"
     values:
