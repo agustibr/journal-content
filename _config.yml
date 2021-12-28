@@ -10,7 +10,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 theme: jekyll-theme-platoniq-journal
 timezone: ES
-destination: ./build
 permalink: /:categories/:title/
 
 collections:
