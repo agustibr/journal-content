@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"vendor/bundle/ruby/2.7.0/bundler/gems/jekyll-theme-platoniq-journal-fdfaf1fe6cfb/_sass/jekyll-theme-platoniq-journal.scss",
+		"vendor/bundle/ruby/2.7.0/bundler/gems/jekyll-theme-platoniq-journal-fdfaf1fe6cfb/_sass/_articles_deep_dive.scss"
+	],
+	"sourcesContent": [
+		"@charset \"utf-8\";\n\n@import \"jekyll-theme-platoniq-journal\";\n",
+		"@charset \"utf-8\";\n\n$font-family-sans-serif: 'Roboto', sans-serif;\n\n@import \"_articles_deep_dive\";\n\nbody{\n  font-family: $font-family-sans-serif;\n  color: #030303;\n  padding: 3rem;\n}\n",
+		".article--deep-dive{\n  // background-color: aqua;\n\n  &_content{\n    > p:first-child{\n      font-weight: bold;\n      font-size: 36px;\n      line-height: 42px;\n      color: #000000;\n    }\n\n    blockquote{\n      border-left: 4px solid grey;\n      padding-left: 2rem;\n      p{\n        font-size: 64px;\n        line-height: 75px;\n        color: #000000;\n      }\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AEAA,AAII,2BAJe,GAIb,CAAC,CAAC,WAAW,CAAA,EACb,WAAW,EAAE,IAAI,EACjB,SAAS,EAAE,IAAI,EACf,WAAW,EAAE,IAAI,EACjB,KAAK,EAAE,OAAO,GACf;;AATL,AAWI,2BAXe,CAWf,UAAU,CAAA,EACR,WAAW,EAAE,cAAc,EAC3B,YAAY,EAAE,IAAI,GAMnB;;AAnBL,AAcM,2BAda,CAWf,UAAU,CAGR,CAAC,CAAA,EACC,SAAS,EAAE,IAAI,EACf,WAAW,EAAE,IAAI,EACjB,KAAK,EAAE,OAAO,GACf;;ADZP,AAAA,IAAI,CAAA,EACF,WAAW,EALY,QAAQ,EAAE,UAAU,EAM3C,KAAK,EAAE,OAAO,EACd,OAAO,EAAE,IAAI,GACd"
+}

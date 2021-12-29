@@ -1,0 +1,9 @@
+.article--deep-dive_content > p:first-child { font-weight: bold; font-size: 36px; line-height: 42px; color: #000000; }
+
+.article--deep-dive_content blockquote { border-left: 4px solid grey; padding-left: 2rem; }
+
+.article--deep-dive_content blockquote p { font-size: 64px; line-height: 75px; color: #000000; }
+
+body { font-family: "Roboto", sans-serif; color: #030303; padding: 3rem; }
+
+/*# sourceMappingURL=styles.css.map */
