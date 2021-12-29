@@ -4,7 +4,8 @@ article-id: dd-example
 author: roberto
 title: My canvas was usually an old cereal or cracker box
 description: A sample article appliying design elements
-image: 
+image: media/dd-example.png
+cover: 
   name: dd-example.png
   credits: Image Credit
   alt: Alt text

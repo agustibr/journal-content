@@ -2,6 +2,7 @@
 title: Virilem puellae utilis infelix
 category: deep-dives
 journal-num: 2
+tags: journal_two
 author: ted
 article-order: 3
 ---
