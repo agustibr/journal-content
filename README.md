@@ -2,7 +2,7 @@
 
 ## Dev
 
-To use [`netlify-cms`]([Overview | Netlify CMS | Open-Source Content Management System](https://www.netlifycms.org/docs/intro/)) in local
+To use [`netlify-cms`](https://www.netlifycms.org/docs/intro) in local
 
 add to `admin/config.yml`:
 
