@@ -2,7 +2,7 @@
 journal-num: 2
 title: Journal Two
 permalink: journal-two
-published: false
+draft: true
 ---
 
 # Ferre arma veteris novat iaculi falsum fragor
@@ -16,4 +16,3 @@ hanc, et quam femina mihi!
 2. Optas quadripedes vultu spernimur Tegeaea factum
 3. Credant rescindere hominum Laertaque possis dic luminibus
 4. Est et Cereremque arcus
-
