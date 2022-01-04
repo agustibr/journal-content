@@ -1,10 +1,16 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: "assets/uploads"
+
+# local_backend: true
+
+media_folder: "media/uploads"
+
+publish_mode: editorial_workflow # Enable drafts
+
 collections:
   - name: "articles"
-    label: "Articlws"
+    label: "Articles"
     folder: "_posts/"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -19,18 +25,18 @@ collections:
           name: "author",
           widget: "relation",
           collection: "authors",
-          displayFields: [display_name],
-          searchFields: [display_name],
-          valueField: "name",
+          displayFields: [name],
+          searchFields: [name],
+          valueField: "short_name",
         }
       - {
           label: "Journal",
-          name: "journal",
+          name: "journal-num",
           widget: "relation",
           collection: "journals",
           displayFields: [title],
           searchFields: [title],
-          valueField: "name",
+          valueField: "journal-num",
         }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "authors"
@@ -44,6 +50,18 @@ collections:
       - { label: "Short Name", name: "short_name", widget: "string" }
       - { label: "Diplay Name", name: "name", widget: "string" }
       - { label: "Position", name: "position", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "journals"
+    label: "Journals"
+    folder: "_journals/"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "journal" }
+      - { label: "Journal Issue Number", name: "journal-num", widget: "number", default: 0, value_type: "int", min: 1, max: 101, step: 1 }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"

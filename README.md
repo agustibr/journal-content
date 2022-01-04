@@ -1,5 +1,21 @@
 # Platoniq Journal
 
+## Dev
+
+To use [`netlify-cms`]([Overview | Netlify CMS | Open-Source Content Management System](https://www.netlifycms.org/docs/intro/)) in local
+
+add to `admin/config.yml`:
+
+    local_backend: true
+
+In a terminal run:
+
+    npx netlify-cms-proxy-server
+
+and in another terminal serve `jekyll` as usual (with livereolad):
+
+    bundle exec jekyll s --livereload    
+
 ## License
 
 The contents of this repository are published under the Creative Commons Attribution-ShareAlike license [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

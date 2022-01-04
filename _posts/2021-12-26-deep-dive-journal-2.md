@@ -1,10 +1,10 @@
 ---
+date: 2022-01-04T11:42:45.214Z
+author: ted
+journal-num: 2
+article-order: 3
 title: Virilem puellae utilis infelix
 category: deep-dives
-journal-num: 2
-tags: journal_two
-author: ted
-article-order: 3
 ---
 
 ## Virilem puellae utilis infelix

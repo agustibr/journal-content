@@ -3,6 +3,7 @@ journal-num: 2
 title: Journal Two
 permalink: journal-two
 draft: true
+date: 2022-01-04T11:42:25.401Z
 ---
 
 # Ferre arma veteris novat iaculi falsum fragor
